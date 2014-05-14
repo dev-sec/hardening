@@ -2,6 +2,10 @@
 
 Demonstrates the use of hardening modules via puppet. Use either Vagrant or Docker, whichever you prefer.
 
+## Modules
+
+* [os_hardening](https://forge.puppetlabs.com/hardening/os_hardening)
+* [ssh_hardening](https://forge.puppetlabs.com/hardening/ssh_hardening)
 
 ## Vagrant
 
