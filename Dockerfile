@@ -6,7 +6,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/
 RUN apt-get update
 
 # install puppet
-RUN apt-get install puppet
+RUN apt-get -y install puppet
 
 # add this folder
 ADD . /hardening
