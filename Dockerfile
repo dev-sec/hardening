@@ -12,7 +12,7 @@ RUN apt-get -y install puppet
 ADD . /hardening
 
 # run puppet
-RUN puppet apply -v -d --detailed-exitcodes --modulepath=/hardening/modules /hardening/manifests/default.pp
+RUN puppet apply -v -d --detailed-exitcodes --modulepath=/hardening/modules /hardening/manifests/docker.pp
 
 # simple command to get into the box
 CMD /bin/bash
