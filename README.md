@@ -2,21 +2,33 @@
 
 Demonstrates the use of hardening modules via Chef.
 
-## Modules
+## Prerequisites
 
-* [os_hardening](http://community.opscode.com/cookbooks/os-hardening)
-* [ssh_hardening](http://community.opscode.com/cookbooks/ssh-hardening)
+Install [Chef](http://www.getchef.com/chef/install/) on your workstation as well as [berkshelf](http://berkshelf.com/) and [knife-solo](http://matschaffer.github.io/knife-solo/)
+
+```bash
+# install berkshelf
+gem install berkshelf
+
+# installs knife-solo
+gem install knife-solo
+```
 
 ## Usage with `knife-solo`
 
-The usage is as simple. With two commands you harden your server in less than 5 minutes.
+The usage is as simple as possible. With one command you harden your server in less than 5 minutes.
 
 ```bash
-# installs knife-solo
-gem install knife-solo
 # bootraps a fresh server with the cookbooks
 knife solo bootstrap user@YOURIP nodes/default.json
 ```
+
+## Modules
+
+This kitchen comes with 2 modules
+
+* [os_hardening](http://community.opscode.com/cookbooks/os-hardening)
+* [ssh_hardening](http://community.opscode.com/cookbooks/ssh-hardening)
 
 ## Contributors + Kudos
 
