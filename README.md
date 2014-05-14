@@ -16,9 +16,13 @@ gem install knife-solo
 
 ## Usage with `knife-solo`
 
-The usage is as simple as possible. With one command you harden your server in less than 5 minutes.
+The usage is as simple as possible. With two commands you harden your server in less than 5 minutes.
 
 ```bash
+# download this kitchen
+git clone https://github.com/TelekomLabs/example-chef-hardening.git
+cd example-chef-hardening
+
 # bootraps a fresh server with the cookbooks
 knife solo bootstrap user@YOURIP nodes/default.json
 ```
