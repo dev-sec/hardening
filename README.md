@@ -28,7 +28,21 @@ That's it. Enjoy testing your box via:
 
 ## Docker
 
-... under construction ...
+You will require `librarian-puppet` for module resolution:
+
+    gem install librarian-puppet
+
+Load modules:
+
+    librarian-puppet install
+
+Once done, get your box up:
+
+    docker build -t example-puppet-hardening .
+
+That's it. Enjoy testing your box via:
+
+    docker run example-puppet-hardening
 
 
 ## Contributors + Kudos
