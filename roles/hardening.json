@@ -9,5 +9,5 @@
         "recipe[ssh-hardening]"
     ],
     "default_attributes": {},
-    "override_attributes": {},
+    "override_attributes": {}
 }
