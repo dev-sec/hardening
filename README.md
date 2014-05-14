@@ -7,9 +7,13 @@ Demonstrates the use of hardening modules via puppet. Use either Vagrant or Dock
 
 You will require `librarian-puppet` for module resolution:
 
-    vagrant plugin install vagrant-librarian-puppet
+    gem install librarian-puppet
 
-Now clone this repo and get your box up.
+Load modules:
+
+    librarian-puppet install
+
+Once done, get your box up:
 
     vagrant up ubuntu-trusty
 
