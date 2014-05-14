@@ -5,7 +5,17 @@ Demonstrates the use of hardening modules via puppet. Use either Vagrant or Dock
 
 ## Vagrant
 
-... under construction ...
+You will require `librarian-puppet` for module resolution:
+
+    vagrant plugin install vagrant-librarian-puppet
+
+Now clone this repo and get your box up.
+
+    vagrant up ubuntu-trusty
+
+That's it. Enjoy testing your box via:
+
+    vagrant ssh ubuntu-trusty
 
 
 ## Docker
