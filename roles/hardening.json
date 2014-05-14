@@ -1,13 +1,13 @@
 {
-  "name": "hardening",
-  "description": "Secure a server",
-  "json_class": "Chef::Role",
-  "chef_type": "role",
-  "run_list": [
-    "recipe[os-hardening]",
-    "recipe[ssh-hardening]"
-  ],
-  "override_attributes": {
-    "tags": []
-  }
+    "name": "hardening",
+    "description": "Secure a server",
+    "json_class": "Chef::Role",
+    "chef_type": "role",
+    "run_list": [
+        "recipe[chef-solo-search]",
+        "recipe[os-hardening]",
+        "recipe[ssh-hardening]"
+    ],
+    "default_attributes": {},
+    "override_attributes": {},
 }
