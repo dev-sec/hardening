@@ -1,0 +1,11 @@
+{
+  "name": "hardening",
+  "description": "Secure a server",
+  "run_list": [
+    "recipe[os-hardening]",
+    "recipe[ssh-hardening]",
+  ],
+  "override_attributes": {
+    "tags": [],
+  }
+}
