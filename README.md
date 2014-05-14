@@ -9,11 +9,14 @@ Demonstrates the use of hardening modules via Chef.
 
 ## Usage with `knife-solo`
 
+The usage is as simple. With two commands you harden your server in less than 5 minutes.
+
+```bash
 # installs knife-solo
 gem install knife-solo
 # bootraps a fresh server with the cookbooks
 knife solo bootstrap user@YOURIP nodes/default.json
-
+```
 
 ## Contributors + Kudos
 
