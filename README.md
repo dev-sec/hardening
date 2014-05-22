@@ -1,6 +1,14 @@
 # Example Chef Hardening
 
-Demonstrates the use of hardening modules via Chef.
+Demonstrates the use of the hardening cookbooks via Chef to increase the security of your server. It also captures the best practice for using multiple hardening modules.
+
+## Modules
+
+This kitchen installs the following on your server:
+
+- [ntp](https://github.com/gmiranda23/ntp)
+- [chef-os-hardening](https://github.com/TelekomLabs/chef-os-hardening)
+- [chef-ssh-hardening](https://github.com/TelekomLabs/chef-ssh-hardening)
 
 ## Prerequisites
 
@@ -16,7 +24,7 @@ gem install knife-solo
 
 ## Usage with `knife-solo`
 
-The usage is as simple as possible. With two commands you harden your server in less than 5 minutes.
+The is kept as simple as possible. With just two commands you are able to harden your server in less than 5 minutes.
 
 ```bash
 # download this kitchen
@@ -27,17 +35,7 @@ cd example-chef-hardening
 knife solo bootstrap user@YOURIP nodes/default.json
 ```
 
-## Modules
-
-This kitchen comes with 2 modules
-
-* [os_hardening](http://community.opscode.com/cookbooks/os-hardening)
-* [ssh_hardening](http://community.opscode.com/cookbooks/ssh-hardening)
-
-## Contributors + Kudos
-
-...
-
+Please read the article [How to harden a new server with Chef](http://lollyrock.com/articles/how-to-harden-a-new-server/) for a more detailed description.
 
 ## License and Author
 
