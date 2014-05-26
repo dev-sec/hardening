@@ -6,7 +6,7 @@ Demonstrates the use of the hardening cookbooks via Chef to increase the securit
 
 This kitchen installs the following on your server:
 
-- [ntp](https://github.com/gmiranda23/ntp)
+- [ntp](https://github.com/gmiranda23/ntp) (best-practice, but not required for hardening projects)
 - [chef-os-hardening](https://github.com/TelekomLabs/chef-os-hardening)
 - [chef-ssh-hardening](https://github.com/TelekomLabs/chef-ssh-hardening)
 
