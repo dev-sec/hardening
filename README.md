@@ -39,6 +39,26 @@ knife solo bootstrap user@YOURIP nodes/default.json
 
 Please read the article [How to harden a new server with Chef](http://lollyrock.com/articles/how-to-harden-a-new-server/) for a more detailed description.
 
+## Usage with Vagrant
+
+Get all required cookbooks locally
+
+```bash
+berks vendor cookbooks
+```
+
+Now fire up vagrant
+
+```bash
+vagrant up
+```
+
+That's it. Enjoy testing your box via:
+
+```bash
+vagrant ssh ubuntu-trusty
+```
+
 ## License and Author
 
 * Author:: Christoph Hartmann <chris@lollyrock.com>
