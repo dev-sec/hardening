@@ -31,6 +31,9 @@ The is kept as simple as possible. With just two commands you are able to harden
 git clone https://github.com/TelekomLabs/example-chef-hardening.git
 cd example-chef-hardening
 
+# download cookbooks
+berks vendor cookbooks
+
 # update your ssh key in `data_bags/users/root.json'
 
 # bootraps a fresh server with the cookbooks
