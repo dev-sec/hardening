@@ -9,21 +9,15 @@ Demonstrates the use of hardening modules via puppet. Use either Vagrant or Dock
 
 ## Vagrant
 
-You will require `librarian-puppet` for module resolution:
+All necessary modules will be automatically fetched by r10k. 
 
-    gem install librarian-puppet
+To get your box up and running:
 
-Load modules:
-
-    librarian-puppet install
-
-Once done, get your box up:
-
-    vagrant up ubuntu-trusty
+    vagrant up
 
 That's it. Enjoy testing your box via:
 
-    vagrant ssh ubuntu-trusty
+    vagrant ssh
 
 
 ## Docker
