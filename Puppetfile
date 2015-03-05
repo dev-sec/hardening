@@ -1,5 +1,8 @@
 forge "https://forge.puppetlabs.com"
 
-mod 'hardening/os_hardening', '>= 0.1.1'
-mod 'hardening/ssh_hardening'
+mod 'puppetlabs/stdlib', :latest
+mod 'thias/sysctl', :latest
+mod 'saz/ssh', :latest
+mod 'hardening/os_hardening', :latest
+mod 'hardening/ssh_hardening', :latest
 
