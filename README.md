@@ -9,15 +9,17 @@ Demonstrates the use of hardening modules via puppet. Use either Vagrant or Dock
 
 ## Vagrant
 
-All necessary modules will be automatically fetched by r10k.
+All necessary modules will be automatically fetched by r10k. Just make sure the modules directory exist:
+
+    mkdir -p modules
 
 To get your box up and running:
 
-    vagrant up ubuntu-trusty
+    vagrant up
 
 That's it. Enjoy testing your box via:
 
-    vagrant ssh ubuntu-trusty
+    vagrant ssh
 
 
 ## Docker
