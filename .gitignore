@@ -1,0 +1,6 @@
+/modules/*
+!/modules/.gitkeep
+Puppetfile.lock
+.librarian
+.tmp
+.vagrant
