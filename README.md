@@ -21,11 +21,13 @@ Currently, all components are implemented in Chef and Puppet. We implemented SSH
 
 This repository contains examples and tools to harden your server. A subfolder for each DevOps tool exists and a readme guides you accordingly:
 
+```bash
 ├── LICENSE
 ├── README.md
 ├── ansible
 ├── chef
 └── puppet
+```
 
 ## Contributors + Kudos
 
