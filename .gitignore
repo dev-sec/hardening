@@ -1,6 +1,8 @@
-/modules/*
-!/modules/.gitkeep
-Puppetfile.lock
-.librarian
-.tmp
-.vagrant
+puppet/modules/*
+!puppet/modules/.gitkeep
+puppet/Puppetfile.lock
+puppet/.librarian
+puppet/.tmp
+puppet/.vagrant
+chef/cookbooks
+chef/.vagrant
