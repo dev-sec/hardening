@@ -1,0 +1,2 @@
+#ubuntu-trusty ansible_ssh_host=192.168.33.44 ansible_ssh_port=22
+zufallsheld ansible_ssh_port=222 ansible_sudo=true
