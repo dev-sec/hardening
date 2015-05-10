@@ -6,3 +6,4 @@ puppet/.tmp
 puppet/.vagrant
 chef/cookbooks
 chef/.vagrant
+ansible/.vagrant
