@@ -1,9 +1,9 @@
 # DevOps Server Hardening
 
-The [Hardening Framework](http://hardening.io/) combines DevOps with Security. It implements hardening for [Puppet](https://puppetlabs.com/), [Chef](https://www.chef.io/) and [Ansible](http://www.ansible.com).
+The [Hardening Framework](http://dev-sec.io/) combines DevOps with Security. It implements hardening for [Puppet](https://puppetlabs.com/), [Chef](https://www.chef.io/) and [Ansible](http://www.ansible.com).
 
 One of the main goals for the Hardening Framework it to provide security as a plug-in mechanism. All modules are implemented as overlay modules and work in conjunction with the corresponding open source module like apache or nginx. This enables you to drop in `hardening` for your staging and production environments and reuse existing developments.
- 
+
 ## Components
 
 The framework consists of 6 components:
