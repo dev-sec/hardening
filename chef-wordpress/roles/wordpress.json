@@ -1,0 +1,30 @@
+{
+    "name": "wordpress",
+    "default_attributes": { },
+    "override_attributes": { },
+    "json_class": "Chef::Role",
+    "description": "Wordpress Role",
+    "chef_type": "role",
+    "default_attributes" : {
+      "php" :{
+        "tmpfs" : false,
+        "use_atomic_repo" : false
+      },
+      "nginx" : {
+        "repo_source" : "nginx",
+        "default_site_enabled" : false,
+        "client_max_body_size" : "50M"
+      },
+      "mysql": {
+        "server_root_password":  "iloverandompasswordsbutthiswilldo"
+      }
+    },
+    "run_list": [
+        "recipe[apt]",
+        "recipe[os-hardening]",
+        "recipe[ssh-hardening]",
+        "recipe[wordpress::nginx]",
+        "recipe[mysql-hardening]",
+        "recipe[nginx-hardening]"
+    ]
+}
