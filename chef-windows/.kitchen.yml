@@ -1,0 +1,28 @@
+---
+driver:
+  name: vagrant
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: windows-2012R2
+    driver_config:
+      box: mwrock/Windows2012R2
+  - name: windows-2016
+    driver_config:
+      box: mwrock/Windows2016
+
+suites:
+  - name: windows
+    run_list:
+    - recipe[windows-hardening]
+    attributes:
+      security_policy:
+        rights:
+          # allow winrm
+          SeNetworkLogonRight: '*S-1-1-0, *S-1-5-32-544, *S-1-5-32-545, *S-1-5-32-551'
+          SeRemoteInteractiveLogonRight: '*S-1-1-0, *S-1-5-32-544, *S-1-5-32-545, *S-1-5-32-551'
+    verifier:
+      inspec_tests:
+      - url: https://github.com/dev-sec/windows-baseline
