@@ -6,16 +6,19 @@ One of the main goals for the Hardening Framework it to provide security as a pl
 
 ## Components
 
-The framework consists of 6 components:
+The framework consists of multiple hardening components:
 
- * Operating System Hardening
- * SSH Hardening
- * Apache Hardening
- * Nginx Hardening
- * Mysql Hardening
- * Postgres Hardening
+ * [Linux System Baseline](https://github.com/dev-sec/linux-baseline)
+ * [SSH Baseline](https://github.com/dev-sec/ssh-baseline)
+ * [Windows System Baseline](https://github.com/dev-sec/windows-baseline)
+ * [Apache Baseline](https://github.com/dev-sec/apache-baseline)
+ * [Nginx Baseline](https://github.com/dev-sec/nginx-baseline)
+ * [Mysql Baseline](https://github.com/dev-sec/mysql-baseline)
+ * [Postgres Baseline](https://github.com/dev-sec/postgres-baseline)
+ * [PHP Baseline](https://github.com/dev-sec/php-baseline)
+ * [SSL/TLS Baseline](https://github.com/dev-sec/ssl-baseline)
 
-Currently, all components are implemented in Chef and Puppet. We implemented SSH Hardening in Ansible and work on OS Hardening. Examples for Ansible will follow as soon as possible.
+Most components are implemented in Ansible, Chef and Puppet.
 
 ## Layout
 
@@ -25,13 +28,9 @@ This repository contains examples and tools to harden your server. A subfolder f
 ├── LICENSE
 ├── README.md
 ├── ansible
-├── chef
+├── chef-linux
 └── puppet
 ```
-
-## Contributors + Kudos
-
-...
 
 ## License and Author
 
