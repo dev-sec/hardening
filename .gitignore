@@ -7,3 +7,6 @@ puppet/.vagrant
 chef/cookbooks
 chef/.vagrant
 ansible/.vagrant
+chef-linux/.kitchen
+Berksfile.lock
+Gemfile.lock
