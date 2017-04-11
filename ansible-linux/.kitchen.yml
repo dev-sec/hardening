@@ -1,0 +1,34 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: ansible_playbook
+  hosts: all
+  require_ansible_repo: false
+  require_ansible_omnibus: true
+  require_chef_for_busser: false
+  require_ruby_for_busser: false
+  ansible_verbose: true
+  requirements_path: requirements.yml
+  #roles_path: roles/
+  playbook: default.yml
+
+transport:
+  max_ssh_sessions: 5
+
+platforms:
+- name: ubuntu-16.04
+  driver_config:
+    box: opscode-ubuntu-16.04
+    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-16.04_chef-provisionerless.box
+
+verifier:
+  name: inspec
+  sudo: true
+  inspec_tests:
+    - https://github.com/dev-sec/linux-baseline/
+    - https://github.com/dev-sec/ssh-baseline/
+
+suites:
+- name: ansible_example

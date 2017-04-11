@@ -1,0 +1,5 @@
+---
+- hosts: all
+  roles:
+    - dev-sec.os-hardening
+    - dev-sec.ssh-hardening
