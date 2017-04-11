@@ -7,5 +7,7 @@ puppet/.vagrant
 ansible/.vagrant
 chef-linux/.kitchen
 chef-windows/.kitchen
+ansible-linux/.kitchen
+ansible-windows/.kitchen
 Berksfile.lock
 Gemfile.lock
