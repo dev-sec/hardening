@@ -27,7 +27,7 @@ This repository contains examples and tools to harden your server. A subfolder f
 ```bash
 ├── LICENSE
 ├── README.md
-├── ansible-linuy
+├── ansible-linux
 ├── chef-linux
 └── puppet
 ```

@@ -11,7 +11,6 @@ provisioner:
   require_ruby_for_busser: false
   ansible_verbose: true
   requirements_path: requirements.yml
-  #roles_path: roles/
   playbook: default.yml
 
 transport:
