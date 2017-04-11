@@ -1,5 +1,0 @@
----
-- hosts: all
-  roles:
-    - ansible-ssh-hardening/roles/ansible-ssh-hardening/
-
