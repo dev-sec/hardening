@@ -4,8 +4,11 @@ puppet/Puppetfile.lock
 puppet/.librarian
 puppet/.tmp
 puppet/.vagrant
-ansible/.vagrant
+ansible-linux/.vagrant
+ansible-linux/roles
 chef-linux/.kitchen
 chef-windows/.kitchen
+ansible-linux/.kitchen
+ansible-windows/.kitchen
 Berksfile.lock
 Gemfile.lock

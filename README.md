@@ -27,7 +27,7 @@ This repository contains examples and tools to harden your server. A subfolder f
 ```bash
 ├── LICENSE
 ├── README.md
-├── ansible
+├── ansible-linux
 ├── chef-linux
 └── puppet
 ```
@@ -36,6 +36,7 @@ This repository contains examples and tools to harden your server. A subfolder f
 
 * Author:: Dominik Richter <dominik.richter@gmail.com>
 * Author:: Christoph Hartmann <chris@lollyrock.com>
+* Author:: Sebastian Gumprich <sebastian.gumprich@38.de>
 * Author:: Deutsche Telekom AG
 
 Licensed under the Apache License, Version 2.0 (the "License");
