@@ -4,7 +4,7 @@ gem 'rake'
 gem 'rack', '1.6.4'
 gem 'inspec', '~> 5'
 gem 'rubocop', '~> 0.93.0'
-gem 'highline', '~> 1.7.0'
+gem 'highline', '~> 2.1.0'
 
 group :integration do
   gem 'berkshelf'
