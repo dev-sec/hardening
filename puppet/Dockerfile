@@ -2,7 +2,7 @@ FROM      	ubuntu:22.04
 MAINTAINER 	Dominik Richter "dominik.richter@gmail.com"
 
 # make sure the package repository is up to date
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu jammy main universe" > /etc/apt/sources.list
 RUN apt-get update
 
 # install puppet
