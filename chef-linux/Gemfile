@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'rack', '3.0.7'
 gem 'inspec', '~> 5'
-gem 'rubocop', '~> 1.49.0'
+gem 'rubocop', '~> 1.50.0'
 gem 'highline', '~> 2.1.0'
 
 group :integration do
