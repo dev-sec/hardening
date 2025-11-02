@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'rack', '3.2.3'
+gem 'rack', '3.2.4'
 gem 'inspec', '~> 5'
 gem 'rubocop', '~> 1.64.0'
 gem 'highline', '~> 2.1.0'
