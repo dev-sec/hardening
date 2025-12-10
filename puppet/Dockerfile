@@ -1,4 +1,4 @@
-FROM      	ubuntu:22.04
+FROM      	ubuntu:24.04
 MAINTAINER 	Dominik Richter "dominik.richter@gmail.com"
 
 # make sure the package repository is up to date
